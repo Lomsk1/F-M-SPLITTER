@@ -1,0 +1,206 @@
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    flex-flow: column;
+}
+.splitter{
+    width: 70%;
+    height: 20%;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color: hsl(186, 14%, 43%);
+}
+.main{
+    width: 70%;
+    height: 70%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    width: 45%;
+    height: 90%;
+    margin: 15px;
+    display: flex;
+    flex-flow: column;
+}
+.bill{
+    width: 100%;
+    height: 25%;
+}
+.bill p{
+    color: hsl(186, 14%, 43%);
+    font-weight: bold;
+}
+::placeholder{
+    text-align: start;
+}
+.num{
+    text-align: end;
+    width: 98%;
+    height: 30%;
+    border: 2px solid hsl(172, 67%, 45%);
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px hsl(183, 100%, 15%);
+    font-size: 22px;
+    color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+}
+.select{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-flow: column;
+}
+.tip{
+    font-family: 'Space Mono', monospace;
+    color: hsl(186, 14%, 43%);
+    font-weight: bold;
+    width: 100%;
+    height: 30%;
+}
+.per{
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-areas: 
+    "five ten fifteen"
+    "twenty fifty custom";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+.one{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(183, 100%, 15%);
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+}
+.one:hover{
+    background-color:  hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+.custom{
+   width: 100%;
+   border-radius: 10px;
+   font-size: 30px;
+   color: hsl(183, 100%, 15%);
+   border: 2px solid hsl(172, 67%, 45%);
+   border-radius: 5px;
+   box-shadow: 1px 1px 2px hsl(183, 100%, 15%);
+   font-size: 22px;
+   text-align: end;
+}
+.people{
+    width: 100%;
+    height: 25%;
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-flow: column;
+}
+.people p{
+    color: hsl(186, 14%, 43%);
+    font-weight: bold;
+}
+.hid{
+    display: flex;
+    justify-content: space-between;
+}
+.can{
+    color: red !important;
+}
+.hide{
+    display: none;
+}
+.result{
+    width: 45%;
+    height: 90%;
+    background-color: hsl(183, 100%, 15%);
+    margin: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.amount{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+    margin-top: 2rem;
+    font-family: 'Space Mono', monospace;
+}
+.total{
+    color: white;
+    font-weight: 700;
+}
+span{
+    color: hsl(186, 14%, 43%);
+    font-weight: 300;
+}
+.number{
+    font-weight: 700;
+    font-size: 40px;
+    color: hsl(172, 67%, 45%);
+    margin-top: -1.5rem;
+}
+.marg{
+    margin-top: 1rem !important;
+}
+#reset{
+    width: 70%;
+    height: 2rem;
+    margin-top: 7rem;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    font-size: 18px;
+}
+#reset:hover{
+    background-color:hsl(185, 41%, 84%);
+}
+@media screen and (max-width: 375px){
+    body{
+        display: inline-flex;
+    }
+    .splitter{
+        margin-top: 20rem;
+    }
+    .main{
+        flex-flow: column;
+        width: 100%;
+        height: auto;
+    }
+    .calculator{
+        width: 100%;
+    }
+    .result{
+        width: 100%;
+    }
+}
